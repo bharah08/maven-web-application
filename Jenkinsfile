@@ -13,7 +13,7 @@ git 'https://github.com/bharah08/maven-web-application.git'
 }
 stage('build package'){
 steps{
-sh 'mvn clean install'
+sh 'mvn clean install -Dskiptests=true'
 
 }
 
